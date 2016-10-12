@@ -117,10 +117,12 @@ def PredictTrials(X, y, fitter, data):
         
         # Make a prediction
         pred = reg.predict([data[0]])[0]
+
         prices.append(pred)
         
         # Result
-        print ("Trial {}: ${:,.2f}").format(k+1, pred)
+        print ("Trial {}: ${:,.2f}".format(k+1, pred))
 
-    # Display price range
-    print ("\nRange in prices: ${:,.2f}").format(max(prices) - min(prices))
+    #Display price range
+    print ("\nRange in prices: ${:,.2f}".format(max(prices) - min(prices)))
+
